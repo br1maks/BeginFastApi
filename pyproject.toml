@@ -1,0 +1,29 @@
+[project]
+name = "microshop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "br1maks",email = "brinkevich06@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "0 (>=0.0.0,<0.0.1)",
+    "uvicorn[standard] (>=0.34.3,<0.35.0)",
+    "redis (>=6.2.0,<7.0.0)"
+]
+
+
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "^0.115.12"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+packages = [{include = "microshop"}]
